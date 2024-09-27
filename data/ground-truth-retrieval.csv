@@ -1,0 +1,501 @@
+id,question
+0,What type of cuisine is Margherita Pizza classified under?
+0,How many calories does one slice of Margherita Pizza contain?
+0,What are the main ingredients found in Margherita Pizza?
+0,How much does one slice of Margherita Pizza cost?
+0,What type of dish is Margherita Pizza considered?
+1,What is the name of the salad that contains grilled chicken?
+1,Can you tell me the price of the Chicken Caesar Salad?
+1,How many calories are in a bowl of Chicken Caesar Salad?
+1,What type of cuisine does the Chicken Caesar Salad belong to?
+1,What ingredients are included in the Chicken Caesar Salad?
+2,What are the main ingredients in Pad Thai?
+2,How many calories are in a serving of Pad Thai?
+2,What is the price for one plate of Pad Thai?
+2,What type of cuisine does Pad Thai belong to?
+2,How many servings are included in one order of Pad Thai?
+3,What is the name of the appetizer in Japanese cuisine?
+3,How many pieces come in a serving of the California Sushi Roll?
+3,What are the main ingredients used in the Sushi Roll?
+3,What is the price of the California Sushi Roll?
+3,How many calories does a serving of the Sushi Roll contain?
+4,What type of dish is the Cheeseburger?
+4,Can you tell me the main ingredients in a Cheeseburger?
+4,How many calories are there in the Cheeseburger?
+4,What is the price of the Cheeseburger?
+4,How many servings does one Cheeseburger provide?
+5,What is the name of the dish?
+5,What type of cuisine does this dish belong to?
+5,What are the main ingredients in Spaghetti Carbonara?
+5,How many calories are in one plate of Spaghetti Carbonara?
+5,What is the price of a serving of Spaghetti Carbonara?
+6,What are the main ingredients in the Beef Tacos?
+6,How many tacos are included in one serving of Beef Tacos?
+6,What is the price for the Beef Tacos?
+6,What type of dish are the Beef Tacos classified as?
+6,Can you tell me the total calorie count for the Beef Tacos?
+7,What ingredients are included in the Greek Salad?
+7,How many calories does the Greek Salad contain?
+7,What type of dish is the Greek Salad classified as?
+7,What is the price for a bowl of Greek Salad?
+7,How many servings are there in the Greek Salad?
+8,What is the name of the pizza that contains BBQ sauce and chicken?
+8,Which cuisine does the BBQ Chicken Pizza belong to?
+8,What are the main ingredients used in the BBQ Chicken Pizza?
+8,How many calories is one slice of BBQ Chicken Pizza?
+8,What is the price of a single slice of BBQ Chicken Pizza?
+9,What is the name of the dish that features rice and egg?
+9,What type of cuisine is Egg Fried Rice categorized under?
+9,Can you tell me the main ingredients used in this dish?
+9,How much does one plate of Egg Fried Rice cost?
+9,What is the calorie count for a serving of Egg Fried Rice?
+10,What type of dish is French Onion Soup?
+10,How many calories are in a bowl of French Onion Soup?
+10,What is the price for a bowl of French Onion Soup?
+10,What are the main ingredients in French Onion Soup?
+10,Which cuisine does French Onion Soup belong to?
+11,What is the name of the dish that contains chicken and spices?
+11,Which cuisine does the butter chicken belong to?
+11,What is included in the ingredients of butter chicken?
+11,How many calories are in a plate of butter chicken?
+11,What is the price for a serving of butter chicken?
+12,What is the name of the dish that includes cod and potatoes?
+12,Which cuisine does the Fish and Chips belong to?
+12,How many calories are there in one serving of Fish and Chips?
+12,What is the price for a serving of Fish and Chips?
+12,What is the main sauce served with Fish and Chips?
+13,What is the name of the dish?
+13,What type of dish is the Veggie Burger classified as?
+13,Can you list the main ingredients in the Veggie Burger?
+13,How many calories are in one Veggie Burger?
+13,What is the price of a single Veggie Burger?
+14,What is the cuisine type of Chicken Biryani?
+14,How many calories are in a serving of Chicken Biryani?
+14,What ingredients are used in Chicken Biryani?
+14,What is the price for one plate of Chicken Biryani?
+14,What type of dish is Chicken Biryani classified as?
+15,What is the name of the dish that is made with falafel?
+15,Can you tell me the type of cuisine for the Falafel Wrap?
+15,What are the main ingredients included in the Falafel Wrap?
+15,How many calories does the Falafel Wrap have?
+15,What is the price of one Falafel Wrap?
+16,What is the name of the dish being offered?
+16,Which cuisine does Shrimp Scampi belong to?
+16,What type of dish is Shrimp Scampi classified as?
+16,Can you tell me the ingredients used in Shrimp Scampi?
+16,What is the price and calorie content of one serving of Shrimp Scampi?
+17,What type of cuisine does the Lobster Roll belong to?
+17,What are the main ingredients in the Lobster Roll?
+17,How many calories are in one Lobster Roll?
+17,What is the price of the Lobster Roll?
+17,What type of food is the Lobster Roll categorized as?
+18,What is the name of the dessert that has chocolate as a main ingredient?
+18,Can you tell me the price of the Chocolate Lava Cake?
+18,How many calories does one serving of Chocolate Lava Cake contain?
+18,What ingredients are used to make the Chocolate Lava Cake?
+18,How many servings does one cake provide?
+19,What is the name of the dish that features pasta and chicken?
+19,Which cuisine does Chicken Alfredo Pasta belong to?
+19,What type of dish is Chicken Alfredo Pasta classified as?
+19,How many calories are in a plate of Chicken Alfredo Pasta?
+19,What is the price for one serving of Chicken Alfredo Pasta?
+20,What type of cuisine does Steak Frites belong to?
+20,How many calories are in the Steak Frites dish?
+20,What are the main ingredients used in Steak Frites?
+20,How much does one serving of Steak Frites cost?
+20,How many servings does the Steak Frites dish provide?
+21,What is the name of the dish?
+21,What type of cuisine does this dish belong to?
+21,What are the main ingredients in the Vegetable Stir-Fry?
+21,How many calories are there in one serving?
+21,What is the price of the Vegetable Stir-Fry?
+22,What is the name of the soup that has shrimp and lemongrass?
+22,What type of cuisine does Tom Yum Soup belong to?
+22,How many calories are there in a bowl of Tom Yum Soup?
+22,What are the main ingredients in Tom Yum Soup?
+22,What is the price for a bowl of Tom Yum Soup?
+23,What type of dish is the Avocado Toast?
+23,How many calories are in one serving of Avocado Toast?
+23,What is the price of the Avocado Toast?
+23,What are the main ingredients in the Avocado Toast?
+23,How many slices does the Avocado Toast serve?
+24,What is the name of the dish available in the app?
+24,What type of cuisine does Ramen Noodles belong to?
+24,What are the main ingredients in Ramen Noodles?
+24,How many calories are in a bowl of Ramen Noodles?
+24,What is the price for a serving of Ramen Noodles?
+25,What type of sandwich is the Pulled Pork Sandwich?
+25,Can you list the ingredients found in the Pulled Pork Sandwich?
+25,How many calories does one Pulled Pork Sandwich contain?
+25,What is the price of the Pulled Pork Sandwich?
+25,Is the Pulled Pork Sandwich considered American cuisine?
+26,What type of dish is Miso Soup?
+26,What are the main ingredients in Miso Soup?
+26,How much does a bowl of Miso Soup cost?
+26,How many calories are in one bowl of Miso Soup?
+26,What cuisine does Miso Soup belong to?
+27,What is the name of the dish that contains rice noodles and beef?
+27,Which cuisine does this soup belong to?
+27,How many calories are in a bowl of Pho?
+27,What is the price for a bowl of this soup?
+27,What ingredients are used in Pho?
+28,What are the main ingredients in the Eggplant Parmesan dish?
+28,How many calories does the Eggplant Parmesan contain?
+28,What is the price of one serving of Eggplant Parmesan?
+28,Is Eggplant Parmesan classified as a main dish or appetizer?
+28,Which cuisine does Eggplant Parmesan belong to?
+29,What ingredients are included in the Peking Duck dish?
+29,How many calories are in one serving of Peking Duck?
+29,What type of cuisine does Peking Duck belong to?
+29,How much does a plate of Peking Duck cost?
+29,Is the serving size for Peking Duck one plate?
+30,What type of dish are Buffalo Wings classified as?
+30,How many pieces are included in a serving of Buffalo Wings?
+30,What are the main ingredients used in Buffalo Wings?
+30,What is the calorie count for a serving of Buffalo Wings?
+30,How much do Buffalo Wings cost?
+31,What cuisine do Spring Rolls belong to?
+31,How many calories are in a serving of Spring Rolls?
+31,What are the main ingredients used in Spring Rolls?
+31,How much do Spring Rolls cost?
+31,How many rolls are included in a serving of Spring Rolls?
+32,What is the name of the dish that features salmon as the main ingredient?
+32,Which cuisine is Grilled Salmon categorized under?
+32,How many calories does the Grilled Salmon contain?
+32,What are the ingredients used in the Grilled Salmon dish?
+32,What is the price of the Grilled Salmon per serving?
+33,What are the main ingredients in the Vegetarian Lasagna?
+33,How many calories are in one serving of the Vegetarian Lasagna?
+33,What type of dish is the Vegetarian Lasagna classified as?
+33,What is the price for one plate of Vegetarian Lasagna?
+33,Which cuisine does the Vegetarian Lasagna belong to?
+34,What type of dish is the Chicken Quesadilla?
+34,How many calories does the Chicken Quesadilla contain?
+34,What ingredients are in the Chicken Quesadilla?
+34,What is the price of the Chicken Quesadilla?
+34,How many servings does the Chicken Quesadilla provide?
+35,What is the name of the appetizer that contains tuna and soy sauce?
+35,How many pieces are included in a serving of Tuna Sashimi?
+35,What type of cuisine does Tuna Sashimi belong to?
+35,What is the price of Tuna Sashimi?
+35,How many calories are in a serving of Tuna Sashimi?
+36,What is the main dish available for breakfast?
+36,What type of cuisine does Shakshuka belong to?
+36,Could you list the ingredients of Shakshuka?
+36,How many servings does one pan of Shakshuka provide?
+36,What is the price and calorie count for Shakshuka?
+37,What type of dish is the Burrito?
+37,How many calories are in the Burrito?
+37,What ingredients are included in the Burrito?
+37,What is the price of the Burrito?
+37,What cuisine does the Burrito belong to?
+38,What is the name of the dish and what cuisine does it belong to?
+38,What type of dish is Dim Sum classified as?
+38,What ingredients are included in the Dim Sum?
+38,How many pieces are served in a single order of Dim Sum?
+38,What is the price and calorie count for an order of Dim Sum?
+39,What is the name of the appetizer containing Buffalo Sauce?
+39,What type of cuisine do the Cauliflower Buffalo Bites belong to?
+39,How many calories are there in one serving of Cauliflower Buffalo Bites?
+39,What is the price for a plate of Cauliflower Buffalo Bites?
+39,What ingredients are used in the Cauliflower Buffalo Bites?
+40,What is the name of the dessert available for order?
+40,What are the main ingredients in the Tiramisu?
+40,How many calories does a single slice of Tiramisu contain?
+40,What is the price per slice of Tiramisu?
+40,What type of cuisine does Tiramisu belong to?
+41,"What is the name of the dish that includes rice, kimchi, and egg?"
+41,Can you tell me the cuisine type of the Kimchi Fried Rice?
+41,How many calories are there in a plate of Kimchi Fried Rice?
+41,What is the price for a serving of Kimchi Fried Rice?
+41,Is Kimchi Fried Rice considered a main dish?
+42,What is the name of the soup offered in the application?
+42,Which cuisine does Clam Chowder belong to?
+42,Can you list the ingredients used in Clam Chowder?
+42,How much does a bowl of Clam Chowder cost?
+42,What is the calorie count for one bowl of Clam Chowder?
+43,What is the name of the sandwich in this exercise?
+43,Which cuisine does the Gyro belong to?
+43,What are the main ingredients in the Gyro sandwich?
+43,How many calories does one serving of the Gyro contain?
+43,What is the price of the Gyro sandwich?
+44,What type of dessert is Baklava?
+44,What are the main ingredients used in Baklava?
+44,How many calories are there in a slice of Baklava?
+44,What is the price for one slice of Baklava?
+44,What cuisine does Baklava belong to?
+45,What type of dish is Spaghetti Bolognese?
+45,Can you list the main ingredients in Spaghetti Bolognese?
+45,How many calories are in one plate of Spaghetti Bolognese?
+45,What is the price for a serving of Spaghetti Bolognese?
+45,Which cuisine does Spaghetti Bolognese belong to?
+46,What is the main dish that includes chicken and garlic sauce?
+46,How much does a Chicken Shawarma wrap cost?
+46,What are the ingredients in the Chicken Shawarma?
+46,How many calories are in one Chicken Shawarma?
+46,What type of cuisine is Chicken Shawarma associated with?
+47,What is the name of the dish?
+47,What type of cuisine does it belong to?
+47,What are the main ingredients used in this dish?
+47,How many calories are in one serving?
+47,What is the price for a bowl of Mac and Cheese?
+48,What are the main ingredients used in Beef Stroganoff?
+48,What type of dish is Beef Stroganoff classified as?
+48,How many calories are in one plate of Beef Stroganoff?
+48,What is the price of one serving of Beef Stroganoff?
+48,Which cuisine does Beef Stroganoff originate from?
+49,What type of dish is Cheese Fondue?
+49,How much does a serving of Cheese Fondue cost?
+49,What are the main ingredients in Cheese Fondue?
+49,In which cuisine is Cheese Fondue categorized?
+49,How many calories does one pot of Cheese Fondue contain?
+50,What type of dish is Chicken Parmesan?
+50,How many calories are in a serving of Chicken Parmesan?
+50,What is the price for one plate of Chicken Parmesan?
+50,Can you list the main ingredients in Chicken Parmesan?
+50,What cuisine does Chicken Parmesan belong to?
+51,What are the main ingredients of a Margarita?
+51,How many calories are in a Margarita?
+51,What is the price of a Margarita?
+51,What type of drink is a Margarita classified as?
+51,What cuisine does a Margarita belong to?
+52,What is the name of the dessert available?
+52,What type of dish are Chocolate Chip Cookies?
+52,How many cookies are served in one order?
+52,What are the main ingredients used in Chocolate Chip Cookies?
+52,What is the price for a serving of Chocolate Chip Cookies?
+53,What is the name of the dish I can order?
+53,What cuisine does the Gnocchi belong to?
+53,What type of dish is Gnocchi classified as?
+53,How many calories are in one serving of Gnocchi?
+53,What is the price for a plate of Gnocchi?
+54,What is the name of the salad dish you offer?
+54,Which cuisine does the Falafel Salad belong to?
+54,What are the ingredients included in the Falafel Salad?
+54,How much does a bowl of Falafel Salad cost?
+54,What is the calorie count for the Falafel Salad?
+55,What is the name of the dish that features Pork Ribs?
+55,What type of cuisine does the Pork Ribs belong to?
+55,Can you tell me the ingredients used in the Pork Ribs dish?
+55,How many servings does the Pork Ribs dish provide?
+55,What is the price and calorie count for the Pork Ribs?
+56,What type of cuisine do Fish Tacos belong to?
+56,How many tacos are included in one serving?
+56,What are the main ingredients used in Fish Tacos?
+56,What is the calorie count for the serving of Fish Tacos?
+56,What is the price of Fish Tacos?
+57,What type of dish is Crepes categorized as?
+57,Can you list the main ingredients used in Crepes?
+57,How many calories are there in one serving of Crepes?
+57,What is the price per serving of Crepes?
+57,What cuisine does Crepes belong to?
+58,What is the name of the dish that contains eggplant and ground beef?
+58,Which cuisine does the Moussaka belong to?
+58,What is the price for one serving of Moussaka?
+58,How many calories are in the Moussaka dish?
+58,What type of dish is Moussaka classified as?
+59,What is the name of the dish that features rice noodles and chicken?
+59,What type of cuisine is Chicken Pad See Ew?
+59,How many calories does one plate of Chicken Pad See Ew contain?
+59,What is the price for a serving of Chicken Pad See Ew?
+59,Can you tell me the main ingredients of Chicken Pad See Ew?
+60,What type of cuisine is French Toast classified under?
+60,What are the main ingredients used in making French Toast?
+60,How many calories are in a serving of French Toast?
+60,What is the price for one slice of French Toast?
+60,Is French Toast considered a breakfast item?
+61,What is the name of the main dish that includes beef and mushrooms?
+61,How much does a serving of Beef Wellington cost?
+61,How many calories are in one serving of Beef Wellington?
+61,What type of cuisine does Beef Wellington belong to?
+61,What ingredients are used in Beef Wellington?
+62,What is the name of the dish that features mixed vegetables and curry sauce?
+62,Which cuisine does the Vegetable Curry belong to?
+62,What type of dish is the Vegetable Curry categorized as?
+62,How much does a serving of Vegetable Curry cost?
+62,How many calories are in one plate of Vegetable Curry?
+63,What is the name of the dish you have available?
+63,What type of cuisine does the Chicken and Waffles belong to?
+63,Can you tell me the main ingredients used in Chicken and Waffles?
+63,How much does the Chicken and Waffles cost?
+63,What is the calorie content for one serving of Chicken and Waffles?
+64,What is the name of the dish in this exercise?
+64,What type of cuisine does Huevos Rancheros belong to?
+64,Can you tell me the main ingredients used in Huevos Rancheros?
+64,What is the price for a serving of Huevos Rancheros?
+64,How many calories are there in one serving of this dish?
+65,What is the name of the dish being offered?
+65,Which cuisine does the Spinach and Ricotta Ravioli belong to?
+65,Can you tell me the main ingredients in the Spinach and Ricotta Ravioli?
+65,How many plates are included in one serving of this dish?
+65,What is the price and calorie count for the Spinach and Ricotta Ravioli?
+66,What is the name of the dish?
+66,What type of cuisine does it belong to?
+66,What are the key ingredients in the dish?
+66,How many calories does one plate contain?
+66,What is the price of the Sweet and Sour Chicken?
+67,What is the name of the main dish that features penne and tomato sauce?
+67,Can you tell me about the cuisine type of this dish?
+67,What are the main ingredients in Penne Arrabbiata?
+67,How many calories are in a serving of this dish?
+67,What is the price for one plate of Penne Arrabbiata?
+68,What type of cuisine does Fettuccine Alfredo belong to?
+68,Can you list the main ingredients in Fettuccine Alfredo?
+68,How many calories are in one serving of Fettuccine Alfredo?
+68,What is the price for a plate of Fettuccine Alfredo?
+68,How many servings does one plate of Fettuccine Alfredo provide?
+69,What is the name of the dish?
+69,What cuisine does the Tofu Stir-Fry belong to?
+69,Can you list the main ingredients of the Tofu Stir-Fry?
+69,How many calories are in a serving of this dish?
+69,What is the price for one plate of Tofu Stir-Fry?
+70,What is the name of the dish you offer that features chicken and spices?
+70,Can you tell me the price for one serving of the Tandoori Chicken?
+70,What cuisine does the Tandoori Chicken belong to?
+70,How many calories are there in a serving of Tandoori Chicken?
+70,What main ingredients are used in the preparation of Tandoori Chicken?
+71,What is the name of the dessert item in your menu?
+71,Which cuisine does the churros belong to?
+71,How many pieces are served in one order of churros?
+71,What is the price for a serving of churros?
+71,Can you list the main ingredients used in churros?
+72,"What is the name of the appetizer that contains bread, tomatoes, basil, and olive oil?"
+72,How many calories are in a serving of Bruschetta?
+72,What type of cuisine does Bruschetta belong to?
+72,What is the price for one serving of Bruschetta?
+72,Is Bruschetta classified as an appetizer or a main dish?
+73,What is the price for a serving of Lamb Kofta?
+73,Can you tell me the main ingredients in the Lamb Kofta dish?
+73,How many calories are in one serving of Lamb Kofta?
+73,What type of cuisine does Lamb Kofta belong to?
+73,Is Lamb Kofta considered a main dish or a side dish?
+74,What type of dish is Pumpkin Pie?
+74,How many calories are in a slice of Pumpkin Pie?
+74,What ingredients are used in the Pumpkin Pie?
+74,What is the price of one slice of Pumpkin Pie?
+74,Which cuisine does Pumpkin Pie belong to?
+75,What is the price of the Crab Cakes appetizer?
+75,How many calories are in one serving of Crab Cakes?
+75,What type of cuisine do the Crab Cakes belong to?
+75,What ingredients are included in the Crab Cakes?
+75,How many servings are provided with the Crab Cakes order?
+76,What is the price of a bowl of Beef Pho?
+76,How many calories are in a serving of Beef Pho?
+76,What type of dish is Beef Pho classified as?
+76,What are the main ingredients in Beef Pho?
+76,What cuisine does Beef Pho belong to?
+77,What type of cuisine is Egg Drop Soup?
+77,How many calories are in a bowl of Egg Drop Soup?
+77,What are the main ingredients used in Egg Drop Soup?
+77,How much does a bowl of Egg Drop Soup cost?
+77,What serving size is provided for Egg Drop Soup?
+78,What cuisine does the Caprese Salad belong to?
+78,What are the main ingredients in the Caprese Salad?
+78,How many plates does the Caprese Salad serve?
+78,How much does the Caprese Salad cost?
+78,What is the calorie content of a serving of Caprese Salad?
+79,What type of cuisine does the French Crepe with Nutella belong to?
+79,How many calories are in the French Crepe with Nutella?
+79,What is the price of one serving of the French Crepe with Nutella?
+79,What ingredients are included in the French Crepe with Nutella?
+79,How many servings are there in one order of the French Crepe with Nutella?
+80,What are the main ingredients in the Seafood Paella?
+80,How much does a plate of Seafood Paella cost?
+80,What type of cuisine does Seafood Paella belong to?
+80,How many calories are in one plate of Seafood Paella?
+80,What type of dish is Seafood Paella classified as?
+81,What cuisine does the Lamb Curry belong to?
+81,What are the main ingredients in the Lamb Curry?
+81,How many calories are there in one plate of Lamb Curry?
+81,How much does one plate of Lamb Curry cost?
+81,Is the Lamb Curry served with anything besides rice?
+82,What are the main ingredients in the Cobb Salad?
+82,How many calories does the Cobb Salad contain?
+82,What is the price of a bowl of Cobb Salad?
+82,Is the Cobb Salad considered an American dish?
+82,How many servings are included in a bowl of the Cobb Salad?
+83,What is the name of the dish offered in the menu?
+83,What type of cuisine does the Beef Burrito Bowl belong to?
+83,Can you list the main ingredients included in the Beef Burrito Bowl?
+83,How many calories are contained in one serving of the Beef Burrito Bowl?
+83,What is the price of a single Beef Burrito Bowl?
+84,What is the name of the dish that includes chicken and herbs?
+84,What type of cuisine does the Roast Chicken belong to?
+84,Can you tell me the main ingredients of the Roast Chicken dish?
+84,How much does one serving of Roast Chicken cost?
+84,What is the calorie count for a single serving of Roast Chicken?
+85,What is the name of the dish that features bacon and cheese?
+85,Which cuisine does Quiche Lorraine belong to?
+85,Can you tell me the price for a slice of Quiche Lorraine?
+85,How many calories are there in one slice of this dish?
+85,What type of dish is Quiche Lorraine classified as?
+86,What type of dish is Lamb Shawarma classified as?
+86,What are the main ingredients included in Lamb Shawarma?
+86,How many calories are in a serving of Lamb Shawarma?
+86,What is the price for a single serving of Lamb Shawarma?
+86,Is Lamb Shawarma a dish from Middle Eastern cuisine?
+87,What is the name of the dessert you offer?
+87,Which cuisine does the Chocolate Mousse belong to?
+87,Can you tell me the main ingredients in the Chocolate Mousse?
+87,How many calories are there in a serving of Chocolate Mousse?
+87,What is the price for one serving of Chocolate Mousse?
+88,What is the name of the dish I can order?
+88,What type of cuisine does the Grilled Cheese Sandwich belong to?
+88,How many calories are in one Grilled Cheese Sandwich?
+88,What are the ingredients used in the Grilled Cheese Sandwich?
+88,What is the price for one Grilled Cheese Sandwich?
+89,What is the name of the main dish?
+89,What cuisine does the Stuffed Peppers belong to?
+89,What are the key ingredients in the Stuffed Peppers?
+89,How many servings does the Stuffed Peppers recipe provide?
+89,What is the price and calorie count for Stuffed Peppers?
+90,What are the main ingredients in the Shrimp Tacos?
+90,How many tacos are included in one serving of Shrimp Tacos?
+90,What is the calorie count for the Shrimp Tacos?
+90,What is the price of the Shrimp Tacos?
+90,Under which cuisine category do the Shrimp Tacos fall?
+91,What is the name of the appetizer that contains chicken and peanut sauce?
+91,How much does the Chicken Satay cost per serving?
+91,What type of cuisine does Chicken Satay belong to?
+91,Can you tell me the calorie count for a serving of Chicken Satay?
+91,How many servings are included in a portion of Chicken Satay?
+92,What type of cuisine do Pork Dumplings belong to?
+92,How many pieces come in one serving of Pork Dumplings?
+92,What are the main ingredients used in Pork Dumplings?
+92,What is the calorie count for a serving of Pork Dumplings?
+92,What is the price of the Pork Dumplings?
+93,What type of cuisine does the Cheesecake belong to?
+93,How many calories are in one slice of the Cheesecake?
+93,What are the main ingredients used in the Cheesecake?
+93,What is the price for one slice of Cheesecake?
+93,How many servings does one order of Cheesecake provide?
+94,What type of dish is Gumbo?
+94,What are the main ingredients in Gumbo?
+94,How many calories are in a bowl of Gumbo?
+94,What is the price of a serving of Gumbo?
+94,What cuisine does Gumbo belong to?
+95,What are the main ingredients of the Roast Beef Sandwich?
+95,How many calories does the Roast Beef Sandwich contain?
+95,What type of cuisine does the Roast Beef Sandwich belong to?
+95,What is the price of the Roast Beef Sandwich?
+95,How many servings does the Roast Beef Sandwich provide?
+96,What is the name of the dish that features pasta and mixed vegetables?
+96,What cuisine is Pasta Primavera classified under?
+96,How many calories are in a serving of Pasta Primavera?
+96,What is the price for a plate of Pasta Primavera?
+96,Is Pasta Primavera considered a main dish?
+97,What is the name of the dish that contains potatoes and flour?
+97,What type of cuisine does Potato Gnocchi belong to?
+97,How many calories are in a plate of Potato Gnocchi?
+97,What are the main ingredients used in Potato Gnocchi?
+97,What is the price of a serving of Potato Gnocchi?
+98,What is the name of the dessert that contains apples?
+98,What type of cuisine does this dessert belong to?
+98,How many calories are in one slice of Apple Pie?
+98,What is the price for a single slice of Apple Pie?
+98,What ingredients are used in making Apple Pie?
+99,What is the name of the dish that features shrimp and Arborio rice?
+99,Can you tell me the type of cuisine for the Shrimp Risotto?
+99,How many calories are in a serving of Shrimp Risotto?
+99,What ingredients are used in the Shrimp Risotto?
+99,What is the price for one plate of Shrimp Risotto?

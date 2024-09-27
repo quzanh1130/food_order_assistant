@@ -1,0 +1,8 @@
+openai
+pandas
+scikit-learn
+flask
+ipwidgets
+tqdm
+notebook==7.1.2
+ipwidgets

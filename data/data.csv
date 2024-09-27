@@ -1,0 +1,101 @@
+id,name,cuisine,type,ingredients,serving,price,calories
+0,Margherita Pizza,Italian,Main Dish,"Dough, Tomato Sauce, Mozzarella, Basil",1 slice,12.0,250
+1,Chicken Caesar Salad,American,Salad,"Romaine Lettuce, Grilled Chicken, Dressing",1 bowl,10.5,400
+2,Pad Thai,Thai,Main Dish,"Rice Noodles, Shrimp, Peanuts, Bean Sprouts",1 plate,14.0,600
+3,Sushi Roll (California),Japanese,Appetizer,"Sushi Rice, Nori, Crab, Avocado, Cucumber",8 pieces,9.0,300
+4,Cheeseburger,American,Main Dish,"Ground Beef, Cheddar, Lettuce, Tomato, Bun",1 burger,11.0,450
+5,Spaghetti Carbonara,Italian,Main Dish,"Spaghetti, Eggs, Parmesan, Bacon",1 plate,13.5,550
+6,Beef Tacos,Mexican,Main Dish,"Beef, Tortilla, Salsa, Cheese",3 tacos,8.0,400
+7,Greek Salad,Mediterranean,Salad,"Cucumber, Feta, Olives, Red Onion",1 bowl,7.0,320
+8,BBQ Chicken Pizza,American,Main Dish,"Dough, BBQ Sauce, Chicken, Cheese",1 slice,13.0,300
+9,Egg Fried Rice,Chinese,Main Dish,"Rice, Egg, Soy Sauce, Peas",1 plate,9.5,450
+10,French Onion Soup,French,Soup,"Onions, Beef Broth, Gruyère Cheese",1 bowl,7.5,200
+11,Butter Chicken,Indian,Main Dish,"Chicken, Cream, Tomato Sauce, Spices",1 plate,15.0,550
+12,Fish and Chips,British,Main Dish,"Cod, Potatoes, Tartar Sauce",1 serving,14.0,600
+13,Veggie Burger,American,Main Dish,"Veggie Patty, Lettuce, Tomato, Bun",1 burger,9.5,350
+14,Chicken Biryani,Indian,Main Dish,"Rice, Chicken, Spices",1 plate,12.5,700
+15,Falafel Wrap,Middle Eastern,Main Dish,"Falafel, Pita, Hummus, Lettuce, Tomato",1 wrap,8.5,350
+16,Shrimp Scampi,Italian,Main Dish,"Shrimp, Garlic, Butter, Pasta",1 plate,16.0,600
+17,Lobster Roll,American,Sandwich,"Lobster, Butter, Hot Dog Bun",1 roll,18.0,450
+18,Chocolate Lava Cake,Dessert,Dessert,"Chocolate, Butter, Sugar, Flour, Eggs",1 cake,7.0,500
+19,Chicken Alfredo Pasta,Italian,Main Dish,"Pasta, Chicken, Cream Sauce",1 plate,12.0,700
+20,Steak Frites,French,Main Dish,"Steak, French Fries",1 serving,18.0,800
+21,Vegetable Stir-Fry,Chinese,Main Dish,"Mixed Vegetables, Soy Sauce",1 plate,9.0,350
+22,Tom Yum Soup,Thai,Soup,"Shrimp, Lemongrass, Chili",1 bowl,11.0,200
+23,Avocado Toast,American,Breakfast,"Avocado, Toast",1 slice,7.5,250
+24,Ramen Noodles,Japanese,Main Dish,"Noodles, Pork, Broth",1 bowl,12.0,550
+25,Pulled Pork Sandwich,American,Sandwich,"Pulled Pork, BBQ Sauce, Bun",1 sandwich,10.0,600
+26,Miso Soup,Japanese,Soup,"Miso Paste, Tofu, Seaweed",1 bowl,5.0,100
+27,Pho,Vietnamese,Soup,"Rice Noodles, Beef, Broth",1 bowl,12.0,450
+28,Eggplant Parmesan,Italian,Main Dish,"Eggplant, Tomato Sauce, Mozzarella",1 plate,11.5,500
+29,Peking Duck,Chinese,Main Dish,"Duck, Pancakes, Hoisin Sauce",1 plate,25.0,850
+30,Buffalo Wings,American,Appetizer,"Chicken Wings, Buffalo Sauce",6 pieces,9.0,600
+31,Spring Rolls,Vietnamese,Appetizer,"Rice Paper, Shrimp, Vegetables",4 rolls,7.5,250
+32,Grilled Salmon,American,Main Dish,"Salmon, Lemon, Herbs",1 fillet,16.0,400
+33,Vegetarian Lasagna,Italian,Main Dish,"Lasagna Noodles, Ricotta, Spinach, Tomato Sauce",1 plate,13.0,550
+34,Chicken Quesadilla,Mexican,Main Dish,"Chicken, Cheese, Tortilla",1 serving,8.5,450
+35,Tuna Sashimi,Japanese,Appetizer,"Tuna, Soy Sauce",6 pieces,14.0,300
+36,Shakshuka,Middle Eastern,Breakfast,"Eggs, Tomato Sauce, Peppers",1 pan,10.0,350
+37,Burrito,Mexican,Main Dish,"Rice, Beans, Chicken, Salsa",1 burrito,8.5,700
+38,Dim Sum,Chinese,Appetizer,"Dumplings, Pork, Shrimp",6 pieces,12.0,300
+39,Cauliflower Buffalo Bites,American,Appetizer,"Cauliflower, Buffalo Sauce",1 plate,7.5,250
+40,Tiramisu,Italian,Dessert,"Mascarpone, Espresso, Ladyfingers",1 slice,6.5,450
+41,Kimchi Fried Rice,Korean,Main Dish,"Rice, Kimchi, Egg",1 plate,9.0,500
+42,Clam Chowder,American,Soup,"Clams, Potatoes, Cream",1 bowl,8.0,350
+43,Gyro,Greek,Sandwich,"Lamb, Tzatziki, Pita",1 serving,10.5,600
+44,Baklava,Mediterranean,Dessert,"Phyllo Dough, Honey, Walnuts",1 slice,5.0,300
+45,Spaghetti Bolognese,Italian,Main Dish,"Spaghetti, Ground Beef, Tomato Sauce",1 plate,13.0,550
+46,Chicken Shawarma,Middle Eastern,Main Dish,"Chicken, Pita, Garlic Sauce",1 wrap,9.0,450
+47,Mac and Cheese,American,Side Dish,"Macaroni, Cheese, Butter",1 bowl,6.0,400
+48,Beef Stroganoff,Russian,Main Dish,"Beef, Mushrooms, Sour Cream, Noodles",1 plate,14.0,600
+49,Cheese Fondue,Swiss,Appetizer,"Cheese, Bread",1 pot,12.0,500
+50,Chicken Parmesan,Italian,Main Dish,"Chicken, Tomato Sauce, Mozzarella",1 plate,14.0,700
+51,Margarita,Mexican,Beverage,"Tequila, Lime Juice, Triple Sec",1 glass,8.0,200
+52,Chocolate Chip Cookies,Dessert,Dessert,"Flour, Butter, Chocolate Chips",2 cookies,4.0,300
+53,Gnocchi,Italian,Main Dish,"Potatoes, Flour, Parmesan",1 plate,13.0,500
+54,Falafel Salad,Middle Eastern,Salad,"Falafel, Lettuce, Tomato, Hummus",1 bowl,8.5,400
+55,Pork Ribs,American,Main Dish,"Pork Ribs, BBQ Sauce",1 serving,16.0,700
+56,Fish Tacos,Mexican,Main Dish,"Fish, Tortilla, Salsa, Cabbage",3 tacos,9.0,350
+57,Crepes,French,Dessert,"Flour, Eggs, Milk, Sugar",1 crepe,6.5,250
+58,Moussaka,Greek,Main Dish,"Eggplant, Ground Beef, Bechamel",1 plate,13.0,600
+59,Chicken Pad See Ew,Thai,Main Dish,"Rice Noodles, Chicken, Soy Sauce, Vegetables",1 plate,13.5,600
+60,French Toast,American,Breakfast,"Bread, Eggs, Milk, Cinnamon",1 slice,7.0,300
+61,Beef Wellington,British,Main Dish,"Beef, Puff Pastry, Mushrooms",1 serving,25.0,800
+62,Vegetable Curry,Indian,Main Dish,"Mixed Vegetables, Curry Sauce, Rice",1 plate,12.0,500
+63,Chicken and Waffles,American,Main Dish,"Fried Chicken, Waffles, Syrup",1 serving,15.0,750
+64,Huevos Rancheros,Mexican,Breakfast,"Eggs, Tortillas, Salsa",1 serving,9.0,400
+65,Spinach and Ricotta Ravioli,Italian,Main Dish,"Ravioli, Spinach, Ricotta Cheese",1 plate,14.0,550
+66,Sweet and Sour Chicken,Chinese,Main Dish,"Chicken, Bell Peppers, Pineapple",1 plate,11.5,600
+67,Penne Arrabbiata,Italian,Main Dish,"Penne, Tomato Sauce, Red Chili",1 plate,12.0,500
+68,Fettuccine Alfredo,Italian,Main Dish,"Fettuccine, Cream, Parmesan",1 plate,13.0,700
+69,Tofu Stir-Fry,Chinese,Main Dish,"Tofu, Vegetables, Soy Sauce",1 plate,10.0,350
+70,Tandoori Chicken,Indian,Main Dish,"Chicken, Yogurt, Spices",1 serving,15.0,550
+71,Churros,Mexican,Dessert,"Flour, Cinnamon, Sugar",3 pieces,6.0,300
+72,Bruschetta,Italian,Appetizer,"Bread, Tomatoes, Basil, Olive Oil",1 serving,7.0,250
+73,Lamb Kofta,Middle Eastern,Main Dish,"Ground Lamb, Spices, Pita",1 serving,12.5,550
+74,Pumpkin Pie,American,Dessert,"Pumpkin, Sugar, Pie Crust",1 slice,5.5,300
+75,Crab Cakes,American,Appetizer,"Crab, Breadcrumbs, Spices",2 cakes,13.0,400
+76,Beef Pho,Vietnamese,Soup,"Rice Noodles, Beef, Herbs",1 bowl,12.0,450
+77,Egg Drop Soup,Chinese,Soup,"Egg, Chicken Broth, Cornstarch",1 bowl,6.0,150
+78,Caprese Salad,Italian,Salad,"Tomatoes, Mozzarella, Basil, Olive Oil",1 plate,8.5,300
+79,French Crepe with Nutella,French,Dessert,"Crepe, Nutella",1 crepe,6.0,350
+80,Seafood Paella,Spanish,Main Dish,"Rice, Shrimp, Mussels, Saffron",1 plate,18.0,700
+81,Lamb Curry,Indian,Main Dish,"Lamb, Curry Sauce, Rice",1 plate,15.0,700
+82,Cobb Salad,American,Salad,"Lettuce, Bacon, Avocado, Egg, Blue Cheese",1 bowl,10.5,500
+83,Beef Burrito Bowl,Mexican,Main Dish,"Rice, Beef, Beans, Salsa",1 bowl,9.5,600
+84,Roast Chicken,American,Main Dish,"Chicken, Herbs, Potatoes",1 serving,14.0,550
+85,Quiche Lorraine,French,Main Dish,"Eggs, Bacon, Cheese, Pastry",1 slice,7.5,350
+86,Lamb Shawarma,Middle Eastern,Main Dish,"Lamb, Pita, Vegetables, Garlic Sauce",1 serving,12.0,600
+87,Chocolate Mousse,French,Dessert,"Chocolate, Cream, Sugar",1 serving,6.5,400
+88,Grilled Cheese Sandwich,American,Sandwich,"Bread, Cheese, Butter",1 sandwich,5.0,400
+89,Stuffed Peppers,Mediterranean,Main Dish,"Bell Peppers, Rice, Ground Meat",1 serving,10.0,500
+90,Shrimp Tacos,Mexican,Main Dish,"Shrimp, Tortillas, Salsa, Cabbage",3 tacos,9.5,350
+91,Chicken Satay,Thai,Appetizer,"Chicken, Peanut Sauce",1 serving,8.0,300
+92,Pork Dumplings,Chinese,Appetizer,"Pork, Dumpling Wrappers, Soy Sauce",6 pieces,7.5,250
+93,Cheesecake,Dessert,Dessert,"Cream Cheese, Sugar, Graham Cracker Crust",1 slice,6.0,500
+94,Gumbo,American,Soup,"Shrimp, Sausage, Rice, Okra",1 bowl,12.0,450
+95,Roast Beef Sandwich,American,Sandwich,"Roast Beef, Horseradish, Bread",1 sandwich,8.0,500
+96,Pasta Primavera,Italian,Main Dish,"Pasta, Mixed Vegetables, Olive Oil",1 plate,11.0,450
+97,Potato Gnocchi,Italian,Main Dish,"Potatoes, Flour, Parmesan",1 plate,12.0,500
+98,Apple Pie,American,Dessert,"Apples, Sugar, Pie Crust",1 slice,5.0,300
+99,Shrimp Risotto,Italian,Main Dish,"Shrimp, Arborio Rice, Parmesan",1 plate,16.0,600
