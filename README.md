@@ -11,8 +11,9 @@
 4. [Reproducibility](#reproducibility)
 5. [Using the application](#using-the-application)
 6. [Monitoring](#monitoring)
-7. [Experiments](#reproducibility)
-8. [Code](#code)
+7. [Deployment](#deployment)
+8. [Experiments](#reproducibility)
+9. [Code](#code)
 
 ## Problem Description
 
@@ -31,7 +32,7 @@ By providing an intuitive, conversational interface, our Food Order Assistant ma
 - Python 3.11
 - Docker and Docker Compose for containerization
 - [Elasticsearch](https://www.elastic.co/) for full-text search
-- Flask as the API interface (see [Background](#background) for more information on Flask)
+- Flask as the API interface
 - Grafana for monitoring and PostgreSQL as the backend for it
 - OpenAI as an LLM
 
@@ -323,6 +324,72 @@ Then go to [localhost:3000](http://localhost:3000):
 
 When prompted, keep "admin" as the new password.
 
+## Deployment
+
+We using AWS EC2 to deploy our project.
+
+<p align="center">
+  <img src="images/workflow.png">
+</p>
+
+Follow the Youtube link below to create AWS EC2 and run your code
+
+[Hosting a Docker Container on AWS EC2 Free Tier in under 12 minutes](https://www.youtube.com/watch?v=qNIniDftAcU)
+
+We using storage to `20GB` and medium instance
+
+And remember edit security group for inbound rule to open Port
+
+[Amazon EC2 instance public IP accessible from outside |add security group EC2 IP](https://www.youtube.com/watch?v=ukdTGVVcqE0)
+
+
+``` bash
+sudo yum update -y
+sudo yum install -y docker
+sudo usermod -a -G docker ec2-user
+sudo yum install git -y
+
+sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+docker-compose version ## >> Docker Compose version v2.29.7
+
+pwd ## >> /home/ec2-user
+mkdir downloads
+cd downloads
+
+sudo yum install python311
+python3 --version
+
+curl -O https://bootstrap.pypa.io/get-pip.py
+python3 get-pip.py --user
+
+## >> Python 3.11.0
+
+git clone https://github.com/quzanh1130/food_order_assistant.git
+cd food_order_assistant
+
+vim .env_template
+# > PASTE YOUR OPEN API KEY
+# > esc -> :wq
+mv .env_template .env
+
+sudo docker-compose  up --build
+
+## Conect to a new terminal
+pip install pipenv
+
+cd food_order_assistant
+pipenv install
+
+pipenv shell
+python3 db_prep.py
+```
+
+After that you can open application
+
+1. Application - `https://<public ip v4>:5000`
+2. Grafana - `https://<public ip v4>:3000` (remmember set up rule for this port not access anywhere)
 
 ## Experiments
 
@@ -420,4 +487,4 @@ The ingestion script is in [`ingest.py`](food_order_assistant/ingest.py).
 
 We using combine to db_prep.py to intial database + index data to elastic search.
 
-We run the ingestion script at the startup of the application. Uisng [`start.sh`](start.sh) and [`Dockerfile`](Dockerfile).
+Remember run `db_prep.py` for set up postgres and elasticsearch

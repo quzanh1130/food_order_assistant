@@ -1,8 +1,6 @@
-openai
+python-dotenv
 pandas
-scikit-learn
-flask
-ipwidgets
 tqdm
-notebook==7.1.2
-ipwidgets
+sentence-transformers
+elasticsearch
+psycopg2-binary

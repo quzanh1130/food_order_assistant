@@ -13,7 +13,4 @@ COPY food_order_assistant .
 
 EXPOSE 5000
 
-# Modify the CMD to use a shell script
-COPY start.sh .
-RUN chmod +x start.sh
-CMD ["./start.sh"]
+CMD gunicorn --bind 0.0.0.0:5000 app:app
