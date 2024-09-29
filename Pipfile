@@ -11,6 +11,8 @@ flask = "*"
 python-dotenv = "*"
 gunicorn = "*"
 psycopg2-binary = "*"
+elasticsearch = "*"
+sentence-transformers = "*"
 
 [dev-packages]
 tqdm = "*"

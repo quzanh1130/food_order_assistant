@@ -5,29 +5,57 @@ from time import time
 
 from openai import OpenAI
 
-import ingest
+from ingest import INDEX_NAME, load_model, index
 
 client = OpenAI()
-index = ingest.load_index()
 print("OpenAI API Key:", os.getenv("OPENAI_API_KEY"))
+model_encoder = load_model()
 
+def elastic_search_hybrid(query):
+    field = "name_vector"
+    vector = model_encoder.encode(query)
+    es_client = index()
+    
+    knn_query = {
+        "field": field,
+        "query_vector": vector,
+        "k": 10,
+        "num_candidates": 10000,
+        "boost": 0.5
+    }
 
-def search(query):
-    boost = {
-      'name': 1.65,
-      'cuisine': 1.84,
-      'type': 1.63,
-      'ingredients': 2.87,
-      'serving': 0.95,
-      'price': 1.37,
-      'calories': 0.23
-    }   
+    keyword_query = {
+        "bool": {
+            "must": {
+                "multi_match": {
+                    "query": query,
+                    "fields": ["name", "cuisine", "type", "ingredients", "serving", "price", "calories"],
+                    "type": "best_fields",
+                    "boost": 0.5,
+                }
+            }
+        }
+    }
 
-    results = index.search(
-        query=query, filter_dict={}, boost_dict=boost, num_results=10
+    search_query = {
+        "knn": knn_query,
+        "query": keyword_query,
+        "size": 10,
+        "_source": ["name", "cuisine", "type", "ingredients", "serving", "price", "calories", "id"]
+    }
+
+    
+    es_results = es_client.search(
+        index=INDEX_NAME,
+        body=search_query
     )
+    
+    result_docs = []
+    
+    for hit in es_results['hits']['hits']:
+        result_docs.append(hit['_source'])
 
-    return results
+    return result_docs
 
 prompt_template = """
 You're a food order. Answer the QUESTION based on the CONTEXT from our exercises database.
@@ -124,7 +152,7 @@ def calculate_openai_cost(model, tokens):
 def rag(query, model="gpt-4o-mini"):
     t0 = time()
 
-    search_results = search(query)
+    search_results = elastic_search_hybrid(query)
     prompt = build_prompt(query, search_results)
     answer, token_stats = llm(prompt, model=model)
 

@@ -10,8 +10,9 @@
 3. [Dataset](#dataset)
 4. [Reproducibility](#reproducibility)
 5. [Using the application](#using-the-application)
-6. [Experiments](#reproducibility)
-7. [Code](#code)
+6. [Monitoring](#monitoring)
+7. [Experiments](#reproducibility)
+8. [Code](#code)
 
 ## Problem Description
 
@@ -29,7 +30,7 @@ By providing an intuitive, conversational interface, our Food Order Assistant ma
 
 - Python 3.11
 - Docker and Docker Compose for containerization
-- [Minsearch](https://github.com/alexeygrigorev/minsearch) for full-text search
+- [Elasticsearch](https://www.elastic.co/) for full-text search
 - Flask as the API interface (see [Background](#background) for more information on Flask)
 - Grafana for monitoring and PostgreSQL as the backend for it
 - OpenAI as an LLM
@@ -175,6 +176,18 @@ After that, start the application (and the database) again.
 
 When the application is running, we can start using it.
 
+### Using simple UI
+
+We build a simple UI using HTML|CSS|Javascript
+
+You can open it at [localhost:5000](https://localhost:5000)
+
+<p align="center">
+  <img src="images/ui.png">
+</p>
+
+
+
 ### CLI
 
 We built an interactive CLI application using
@@ -256,40 +269,60 @@ After sending it, you'll receive the acknowledgement:
     "message": "Feedback received for conversation 0eedac38-a25e-4d74-bd33-d30566dd051d: 1"
 }
 ```
+## Monitoring
 
-## Code
+We using Grafana for monitoring the system.
 
-The code for the application is in the [`food_order_assistant`](food_order_assistant/) folder:
+You can open the dashboard at [localhost:3000](https://localhost:3000)
 
-- [`app.py`](food_order_assistant/app.py) - the Flask API, the main entrypoint to the application
-- [`rag.py`](food_order_assistant/rag.py) - the main RAG logic for building the retrieving the data and building the prompt
-- [`ingest.py`](food_order_assistant/ingest.py) - loading the data into the knowledge base
-- [`minsearch.py`](food_order_assistant/minsearch.py) - an in-memory search engine
-- [`db.py`](food_order_assistant/db.py) - the logic for logging the requests and responses to postgres
-- [`db_prep.py`](food_order_assistant/db_prep.py) - the script for initializing the database
+- Login: "admin"
+- Password: "admin"
 
-We also have some code in the project root directory:
+### Dashboards
 
-- [`test.py`](test.py) - select a random question for testing
-- [`cli.py`](cli.py) - interactive CLI for the APP
+<p align="center">
+  <img src="images/grafana_dashboard.png">
+</p>
 
-### Interface
+The monitoring dashboard contains several panels:
 
-We use Flask for serving the application as an API.
+1. **Last 5 Conversations (Table):** Displays a table showing the five most recent conversations, including details such as the question, answer, relevance, and timestamp. This panel helps monitor recent interactions with users.
+2. **Feedback +1/-1 (Pie Chart):** A pie chart that visualizes the feedback from users, showing the count of positive (thumbs up) and negative (thumbs down) feedback received. This panel helps track user satisfaction.
+3. **Relevance (Gauge):** A gauge chart representing the relevance of the responses provided during conversations. The chart categorizes relevance and indicates thresholds using different colors to highlight varying levels of response quality.
+4. **OpenAI Cost (Time Series):** A time series line chart depicting the cost associated with OpenAI usage over time. This panel helps monitor and analyze the expenditure linked to the AI model's usage.
+5. **Tokens (Time Series):** Another time series chart that tracks the number of tokens used in conversations over time. This helps to understand the usage patterns and the volume of data processed.
+6. **Average Response Time (Time Series):** A time series chart showing the response time of conversations over time. This panel is useful for identifying performance issues and ensuring the system's responsiveness.
 
-Refer to the ["Using the Application" section](#using-the-application)
-for examples on how to interact with the application.
+### Setting up Grafana
 
-### Ingestion
+All Grafana configurations are in the [`grafana`](grafana/) folder:
 
-The ingestion script is in [`ingest.py`](food_order_assistant/ingest.py).
+- [`init.py`](grafana/init.py) - for initializing the datasource and the dashboard.
+- [`dashboard.json`](grafana/dashboard.json) - the actual dashboard (taken from LLM Zoomcamp without changes).
 
-Since we use an in-memory database, `minsearch`, as our
-knowledge base, we run the ingestion script at the startup
-of the application.
+To initialize the dashboard, first ensure Grafana is
+running (it starts automatically when you do `docker-compose up`).
 
-It's executed inside [`rag.py`](food_order_assistant/rag.py)
-when we import it.
+Then run:
+
+```bash
+pipenv shell
+
+cd grafana
+
+# make sure the POSTGRES_HOST variable is not overwritten 
+env | grep POSTGRES_HOST
+
+python init.py
+```
+
+Then go to [localhost:3000](http://localhost:3000):
+
+- Login: "admin"
+- Password: "admin"
+
+When prompted, keep "admin" as the new password.
+
 
 ## Experiments
 
@@ -310,7 +343,7 @@ We have the following notebooks:
 
 ### Retrieval evaluation
 
-The basic approach - using `minsearch` without any boosting - gave the following metrics:
+**1. The basic approach - using `minsearch` without any boosting - gave the following metrics:**
 
 - Hit rate: 94,2%
 - MRR: 88,2%
@@ -334,6 +367,11 @@ boost = {
 }
 ```
 
+**2. The another approach using `Elastic search + knn`:**
+
+- Hit rate: 94,6%
+- MRR: 91,4%
+
 ### RAG flow evaluation
 
 We used the LLM-as-a-Judge metric to evaluate the quality
@@ -352,3 +390,34 @@ We also tested `gpt-4o`:
 - 0 (0%) `NON_RELEVANT`
 
 The difference is minimal, so we opted for `gpt-4o-mini`.
+
+## Code
+
+The code for the application is in the [`food_order_assistant`](food_order_assistant/) folder:
+
+- [`app.py`](food_order_assistant/app.py) - the Flask API, the main entrypoint to the application
+- [`rag.py`](food_order_assistant/rag.py) - the main RAG logic for building the retrieving the data and building the prompt
+- [`ingest.py`](food_order_assistant/ingest.py) - loading the data into the knowledge base
+- [`db.py`](food_order_assistant/db.py) - the logic for logging the requests and responses to postgres
+- [`db_prep.py`](food_order_assistant/db_prep.py) - the script for initializing the database
+- [`static`](food_order_assistant/static/) - the folder contain ui code
+
+We also have some code in the project root directory:
+
+- [`test.py`](test.py) - select a random question for testing
+- [`cli.py`](cli.py) - interactive CLI for the APP
+
+### Interface
+
+We use Flask for serving the application as an API.
+
+Refer to the ["Using the Application" section](#using-the-application)
+for examples on how to interact with the application.
+
+### Ingestion
+
+The ingestion script is in [`ingest.py`](food_order_assistant/ingest.py).
+
+We using combine to db_prep.py to intial database + index data to elastic search.
+
+We run the ingestion script at the startup of the application. Uisng [`start.sh`](start.sh) and [`Dockerfile`](Dockerfile).

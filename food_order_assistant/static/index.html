@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Food Order Assistant</h1>
+        <form id="questionForm">
+            <textarea id="question" rows="4" placeholder="Ask a question about food ordering..."></textarea>
+            <button type="submit">Ask Question</button>
+        </form>
+        <div id="loading">
+            <div class="spinner"></div>
+            <p>Preparing your answer...</p>
+        </div>
+        <div id="result" style="display: none;">
+            <h3>Answer:</h3>
+            <div id="answer"></div>
+            <div class="feedback">
+                <p>Was this answer helpful?</p>
+                <button onclick="provideFeedback(1)">👍 Yes</button>
+                <button onclick="provideFeedback(-1)">👎 No</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

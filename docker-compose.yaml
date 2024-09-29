@@ -10,6 +10,18 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.4.3
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    ports:
+      - "${ELASTIC_PORT:-9200}:9200"
+      - "9300:9300"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+
   app:
     build:
       context: .
@@ -23,6 +35,7 @@ services:
     ports:
       - "${APP_PORT:-5000}:5000"
     depends_on:
+      - elasticsearch
       - postgres
 
   grafana:
@@ -47,4 +60,5 @@ services:
 
 volumes:
   postgres_data:
+  elasticsearch_data:
   grafana_data:
