@@ -58,7 +58,7 @@ def elastic_search_hybrid(query):
     return result_docs
 
 prompt_template = """
-You're a food order. Answer the QUESTION based on the CONTEXT from our exercises database.
+You're a food order. Answer the QUESTION based on the CONTEXT from our foods database.
 Use only the facts from the CONTEXT when answering the QUESTION.
 
 QUESTION: {question}
