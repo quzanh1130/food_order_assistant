@@ -7,7 +7,7 @@ question = df.sample(n=1).iloc[0]['question']
 
 print("question: ", question)
 
-url = "http://localhost:5000/question"
+url = "http://localhost:8000/question"
 
 
 data = {"question": question}

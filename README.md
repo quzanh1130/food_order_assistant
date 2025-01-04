@@ -71,7 +71,7 @@ COPY and PASTE it to .env file
 For dependency management, we use pipenv, so you need to install it:
 
 ```bash
-pip install pipenv
+sudo apt install pipenv
 ```
 
 Once installed, you can install the app dependencies:

@@ -34,7 +34,7 @@ def main():
     )
     args = parser.parse_args()
 
-    base_url = "http://localhost:5000"
+    base_url = "http://localhost:8000"
     csv_file = "./data/ground-truth-retrieval.csv"
 
     print("Welcome to the interactive question-answering app!")

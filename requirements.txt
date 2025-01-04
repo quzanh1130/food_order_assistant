@@ -1,6 +1,9 @@
+fastapi
+uvicorn
 python-dotenv
 pandas
 tqdm
+openai
 sentence-transformers
 elasticsearch
 psycopg2-binary
