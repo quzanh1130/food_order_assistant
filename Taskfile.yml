@@ -1,0 +1,9 @@
+version: '3'
+
+tasks:
+  run:
+    desc: Start the Docker Compose services
+    cmds:
+      - docker compose down
+      - docker system prune -f
+      - docker compose up --build
