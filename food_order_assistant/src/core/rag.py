@@ -2,14 +2,12 @@ import os
 import json
 from time import time
 
-from openai import OpenAI
+from database.search import elastic_search_hybrid
+from core.cost_calculator import calculate_openai_cost
+from core.evaluate import evaluate_relevance
+from core.promt_storage import PROMT_TEMPLTE, PROMT_TEMPLTE_CONVERSATION, ENTRY_TEMPLATE
+from core.llm import llm
 
-from search import elastic_search_hybrid
-from cost_calculator import calculate_openai_cost
-from evaluate import evaluate_relevance
-from promt_storage import PROMT_TEMPLTE, PROMT_TEMPLTE_CONVERSATION, ENTRY_TEMPLATE
-
-client = OpenAI()
 
 def build_prompt(query, search_results):
     context = ""
@@ -28,22 +26,6 @@ def build_prompt_conversation(query, conversation, search_results):
 
     prompt = PROMT_TEMPLTE_CONVERSATION.format(question=query, conversation=conversation, context=context).strip()
     return prompt
-
-
-def llm(prompt, model="gpt-4o-mini"):
-    response = client.chat.completions.create(
-        model=model, messages=[{"role": "user", "content": prompt}]
-    )
-
-    answer = response.choices[0].message.content
-
-    token_stats = {
-        "prompt_tokens": response.usage.prompt_tokens,
-        "completion_tokens": response.usage.completion_tokens,
-        "total_tokens": response.usage.total_tokens,
-    }
-
-    return answer, token_stats
 
 
 def rag(query, model="gpt-4o-mini"):

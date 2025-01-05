@@ -25,7 +25,7 @@ services:
 
   app:
     build:
-      context: .
+      context: ./food_order_assistant
       dockerfile: Dockerfile
     environment:
       POSTGRES_HOST: ${POSTGRES_HOST}

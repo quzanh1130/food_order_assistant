@@ -1,4 +1,4 @@
-from logger import logger
+from core.logger import logger
 
 def calculate_openai_cost(model, tokens):
     openai_cost = 0

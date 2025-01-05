@@ -1,4 +1,4 @@
-from ingest import INDEX_NAME, load_model, index
+from database.ingest import INDEX_NAME, load_model, index
 
 model_encoder = load_model()
 
@@ -10,7 +10,7 @@ def elastic_search_hybrid(query):
     knn_query = {
         "field": field,
         "query_vector": vector,
-        "k": 10,
+        "k": 5,
         "num_candidates": 10000,
         "boost": 0.5
     }
@@ -31,7 +31,7 @@ def elastic_search_hybrid(query):
     search_query = {
         "knn": knn_query,
         "query": keyword_query,
-        "size": 10,
+        "size": 5,
         "_source": ["name", "cuisine", "type", "ingredients", "serving", "price", "calories", "id"]
     }
 

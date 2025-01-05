@@ -1,50 +1,18 @@
 import uuid
-from fastapi import FastAPI, Request, HTTPException
+from fastapi import APIRouter, Request, HTTPException
 from fastapi.responses import JSONResponse, FileResponse
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
-from fastapi import HTTPException
+from core.exception import QuestionNotProvidedException
+from core.logger import logger
+from database.db import save_conversation, save_feedback
+from core.rag import rag, rag_conversation
 
-import db
-from logger import logger
-from rag import rag, rag_conversation
-from exception import QuestionNotProvidedException
+router = APIRouter()
 
-app = FastAPI()
-
-# Set up CORS
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # Adjust this to your needs
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-# Serve static files
-app.mount("/static", StaticFiles(directory="static"), name="static")
-
-@app.get("/")
+@router.get("/")
 async def index():
-    return FileResponse('static/index.html')
+    return FileResponse('./static/index.html')
 
-@app.exception_handler(QuestionNotProvidedException)
-async def question_not_provided_exception_handler(request: Request, exc: QuestionNotProvidedException):
-    logger.error(f"QuestionNotProvidedException: {exc.detail}")
-    return JSONResponse(
-        status_code=400,
-        content={"detail": exc.detail},
-    )
-
-@app.exception_handler(Exception)
-async def general_exception_handler(request: Request, exc: Exception):
-    logger.error(f"Unexpected error: {exc}")
-    return JSONResponse(
-        status_code=500,
-        content={"detail": "An unexpected error occurred."},
-    )
-
-@app.post("/question")
+@router.post("/question")
 async def handle_question(request: Request):
     try:
         data = await request.json()
@@ -66,7 +34,7 @@ async def handle_question(request: Request):
         }
 
         logger.info(f"Stored conversation: {conversation_id}")
-        db.save_conversation(
+        save_conversation(
             conversation_id=conversation_id,
             question=question,
             answer_data=answer_data,
@@ -75,11 +43,8 @@ async def handle_question(request: Request):
         return JSONResponse(content=result)
     except QuestionNotProvidedException as e:
         raise e
-    except Exception as e:
-        logger.error(f"Error handling question: {e}")
-        raise HTTPException(status_code=500, detail="Internal server error")
 
-@app.post("/conversation")
+@router.post("/conversation")
 async def handle_question(request: Request):
     try:
         data = await request.json()
@@ -103,7 +68,7 @@ async def handle_question(request: Request):
         }
 
         logger.info(f"Stored conversation: {conversation_id}")
-        db.save_conversation(
+        save_conversation(
             conversation_id=conversation_id,
             question=question,
             answer_data=answer_data,
@@ -116,7 +81,7 @@ async def handle_question(request: Request):
         logger.error(f"Error handling question: {e}")
         raise HTTPException(status_code=500, detail="Internal server error")
 
-@app.post("/feedback")
+@router.post("/feedback")
 async def handle_feedback(request: Request):
     try:
         data = await request.json()
@@ -129,7 +94,7 @@ async def handle_feedback(request: Request):
 
         logger.info(f"Received feedback for conversation {conversation_id}: {feedback}")
         
-        db.save_feedback(
+        save_feedback(
             conversation_id=conversation_id,
             feedback=feedback,
         )

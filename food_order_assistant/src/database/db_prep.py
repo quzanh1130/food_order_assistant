@@ -3,8 +3,8 @@ from dotenv import load_dotenv
 
 os.environ['RUN_TIMEZONE_CHECK'] = '0'
 
-from db import init_db
-from ingest import ingest_data
+from database.db import init_db
+from database.ingest import ingest_data
 
 load_dotenv()
 

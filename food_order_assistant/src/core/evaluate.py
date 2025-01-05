@@ -1,6 +1,6 @@
 import json
-from promt_storage import EVALUATION_PROMT_TEMPLATE
-from rag import llm
+from core.promt_storage import EVALUATION_PROMT_TEMPLATE
+from core.llm import llm
 
 def evaluate_relevance(question, answer):
     prompt = EVALUATION_PROMT_TEMPLATE.format(question=question, answer=answer)
